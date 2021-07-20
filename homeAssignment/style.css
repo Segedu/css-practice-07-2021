@@ -1,0 +1,28 @@
+div {
+  display: flex;
+  position: relative;
+  background-color: green;
+  color: white;
+}
+img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+@media (max-width: 425px) {
+  div {
+    flex-direction: column;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  div {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #drawing {
+    align-self: flex-start;
+  }
+}
+
+/* @media (min-width: 769px) and (max-width: 1024px)  */
